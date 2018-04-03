@@ -8,9 +8,13 @@ class CardList extends React.Component {
     return(
       <div>
       {
-          robots.map(robot => {
-          return <Card username={robot.username} name={robot.name} email={robot.email}/>;
-        })
+          robots.map(robot =>
+           <Card
+             key={robot.id}
+             username={robot.username}
+             name={robot.name}
+             email={robot.email}/>
+        )
       }
       </div>
     );
