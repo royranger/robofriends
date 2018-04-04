@@ -1,14 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Card from './Card';
-import {robots} from './robots';
 
-class CardList extends React.Component {
+class CardList extends Component {
 
   render() {
     return(
       <div>
       {
-          robots.map(robot =>
+          this.props.robots.map(robot =>
            <Card
              key={robot.id}
              username={robot.username}

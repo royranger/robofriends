@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class SearchBox extends React.Component {
+class SearchBox extends Component {
 
   render() {
     return(
@@ -9,6 +9,7 @@ class SearchBox extends React.Component {
           className='pa3 ba b--green bg-lightest-blue'
           type='search'
           placeholder='search robots'
+          onChange={this.props.onSearchChange} 
         />
       </div>
 

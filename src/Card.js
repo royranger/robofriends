@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './Card.css';
 
-class Card extends React.Component {
+class Card extends Component {
 
   render() {
     return (
